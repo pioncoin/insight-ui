@@ -47,7 +47,6 @@
   "scripts": {
     "build": "npm install && grunt compile",
     "watch": "grunt",
-    "install-and-build": "npm install && npm run build",
     "test": "mocha test"
   },
   "dependencies": {
@@ -77,6 +76,6 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-css": "~0.5.4",
     "grunt-macreload": "*",
-    "grunt-markdown": "~0.7.0"
+    "grunt-markdownlint": "~2.1.0"
   }
 }
