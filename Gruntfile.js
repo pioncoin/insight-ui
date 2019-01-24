@@ -26,11 +26,11 @@ module.exports = function(grunt) {
         }
       },
       vendors: {
-        src: ['public/src/js/ios-imagefile-megapixel/megapix-image.js', 'public/lib/qrcode-generator/js/qrcode.js', 'public/src/js/jsqrcode/grid.js', 'public/src/js/jsqrcode/version.js', 'public/src/js/jsqrcode/detector.js', 'public/src/js/jsqrcode/formatinf.js', 'public/src/js/jsqrcode/errorlevel.js', 'public/src/js/jsqrcode/bitmat.js', 'public/src/js/jsqrcode/datablock.js', 'public/src/js/jsqrcode/bmparser.js', 'public/src/js/jsqrcode/datamask.js', 'public/src/js/jsqrcode/rsdecoder.js', 'public/src/js/jsqrcode/gf256poly.js', 'public/src/js/jsqrcode/gf256.js', 'public/src/js/jsqrcode/decoder.js', 'public/src/js/jsqrcode/qrcode.js', 'public/src/js/jsqrcode/findpat.js', 'public/src/js/jsqrcode/alignpat.js', 'public/src/js/jsqrcode/databr.js', 'public/lib/momentjs/min/moment.min.js', 'public/lib/moment/lang/es.js', 'public/lib/zeroclipboard/ZeroClipboard.min.js'],
+        src: ['public/src/js/ios-imagefile-megapixel/megapix-image.js', 'public/src/js/jsqrcode/grid.js', 'public/src/js/jsqrcode/version.js', 'public/src/js/jsqrcode/detector.js', 'public/src/js/jsqrcode/formatinf.js', 'public/src/js/jsqrcode/errorlevel.js', 'public/src/js/jsqrcode/bitmat.js', 'public/src/js/jsqrcode/datablock.js', 'public/src/js/jsqrcode/bmparser.js', 'public/src/js/jsqrcode/datamask.js', 'public/src/js/jsqrcode/rsdecoder.js', 'public/src/js/jsqrcode/gf256poly.js', 'public/src/js/jsqrcode/gf256.js', 'public/src/js/jsqrcode/decoder.js', 'public/src/js/jsqrcode/qrcode.js', 'public/src/js/jsqrcode/findpat.js', 'public/src/js/jsqrcode/alignpat.js', 'public/src/js/jsqrcode/databr.js', 'node_modules/moment/min/moment.min.js', 'node_modules/moment/locale/es.js'],
         dest: 'public/js/vendors.js'
       },
       angular: {
-        src: ['public/lib/angular/angular.min.js', 'public/lib/angular-resource/angular-resource.min.js', 'public/lib/angular-route/angular-route.min.js', 'public/lib/angular-qrcode/qrcode.js', 'public/lib/angular-animate/angular-animate.min.js', 'public/lib/angular-bootstrap/ui-bootstrap.js', 'public/lib/angular-bootstrap/ui-bootstrap-tpls.js', 'public/lib/angular-ui-utils/ui-utils.min.js', 'public/lib/ngprogress/build/ngprogress.min.js', 'public/lib/angular-gettext/dist/angular-gettext.min.js', 'public/lib/angular-moment/angular-moment.min.js', 'public/lib/angular-ui-router/release/angular-ui-router.js'],
+        src: ['node_modules/angular/angular.min.js', 'node_modules/angular-resource/angular-resource.min.js', 'node_modules/angular-route/angular-route.min.js', 'node_modules/angular-qrcode/qrcode.js', 'node_modules/angular-animate/angular-animate.min.js', 'node_modules/angular-bootstrap/ui-bootstrap.js', 'node_modules/angular-bootstrap/ui-bootstrap-tpls.js', 'node_modules/angular-ui-utils/ui-utils.min.js', 'node_modules/ngprogress/build/ngprogress.min.js', 'node_modules/angular-gettext/dist/angular-gettext.min.js', 'node_modules/angular-moment/angular-moment.min.js', 'node_modules/angular-ui-router/release/angular-ui-router.js'],
         dest: 'public/js/angularjs-all.js'
       },
       main: {
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
         dest: 'public/js/main.js'
       },
       css: {
-        src: ['public/lib/bootstrap/dist/css/bootstrap.min.css', 'public/src/css/**/*.css'],
+        src: ['node_modules/bootstrap/dist/css/bootstrap.min.css', 'public/src/css/**/*.css'],
         dest: 'public/css/main.css'
       }
     },
