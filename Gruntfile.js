@@ -3,7 +3,7 @@
 module.exports = function(grunt) {
 
   //Load NPM tasks
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-uglify-es');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-css');
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
         dest: 'public/js/vendors.js'
       },
       angular: {
-        src: ['node_modules/angular/angular.min.js', 'node_modules/angular-resource/angular-resource.min.js', 'node_modules/angular-route/angular-route.min.js', 'node_modules/angular-qrcode/qrcode.js', 'node_modules/angular-animate/angular-animate.min.js', 'node_modules/angular-bootstrap/ui-bootstrap.js', 'node_modules/angular-bootstrap/ui-bootstrap-tpls.js', 'node_modules/angular-ui-utils/ui-utils.min.js', 'node_modules/ngprogress/build/ngprogress.min.js', 'node_modules/angular-gettext/dist/angular-gettext.min.js', 'node_modules/angular-moment/angular-moment.min.js', 'node_modules/angular-ui-router/release/angular-ui-router.js'],
+        src: ['node_modules/angular/angular.min.js', 'node_modules/angular-resource/angular-resource.min.js', 'node_modules/angular-route/angular-route.min.js', 'node_modules/angular-qrcode/qrcode.js', 'node_modules/angular-animate/angular-animate.min.js', 'node_modules/angular-ui-bootstrap-4/dist/ui-bootstrap-3.0.0-5.js', 'node_modules/angular-ui-bootstrap-4/dist/ui-bootstrap-tpls-3.0.0-5.js', 'node_modules/ngprogress/build/ngprogress.min.js', 'node_modules/angular-gettext/dist/angular-gettext.min.js', 'node_modules/angular-moment/angular-moment.min.js', 'node_modules/angular-ui-router/release/angular-ui-router.min.js'],
         dest: 'public/js/angularjs-all.js'
       },
       main: {
