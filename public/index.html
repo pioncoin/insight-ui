@@ -1,19 +1,23 @@
 <!doctype html>
 <html lang="en" data-ng-app="insight" data-ng-csp>
+
 <head>
   <base href="/" />
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<meta name="fragment" content="!">
-	<title data-ng-bind="$root.title + $root.titleDetail + ' | Insight'">Insight</title>
-	<meta name="keywords" content="pion, pions, bitcoins, transactions, blocks, address, block chain, best block, mining difficulty, hash serialized">
-	<meta name="description" content="Pion Insight. View detailed information on all pion transactions and block. {{ $root.title + $root.titleDetail }}">
-	<link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
-	<link rel="stylesheet" href="css/main.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="fragment" content="!">
+  <title data-ng-bind="$root.title + $root.titleDetail + ' | Insight'">Insight</title>
+  <meta name="keywords"
+    content="pion, pions, bitcoins, transactions, blocks, address, block chain, best block, mining difficulty, hash serialized">
+  <meta name="description"
+    content="Pion Insight. View detailed information on all pion transactions and block. {{ $root.title + $root.titleDetail }}">
+  <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
+
 <body ng-cloak class="ng-cloak">
   <div>
     <script type="text/ng-template" id="scannerModal.html">
@@ -40,18 +44,17 @@
       </div>
     </script>
   </div>
-	<div id="wrap">
-		<div class="navbar navbar-default navbar-fixed-top" data-ng-include="'views/includes/header.html'" role='navigation'></div>
-		<section class="container" data-ng-view></section>
-	</div>
-	<div id="footer" role="navigation">
+  <div id="wrap">
+    <div class="navbar navbar-default navbar-fixed-top" data-ng-include="'views/includes/header.html'"
+      role='navigation'></div>
+    <section class="container" data-ng-view></section>
+  </div>
+  <div id="footer" role="navigation">
     <div class="container" data-ng-controller="FooterController">
       <div class="links m20t pull-left">
         <span class="languages" ng-show="availableLanguages[0]">
           [
-          <a href="#"
-            ng-click="setLanguage(l.isoCode)"
-            ng-class="{'selected': defaultLanguage == l.isoCode}"
+          <a href="#" ng-click="setLanguage(l.isoCode)" ng-class="{'selected': defaultLanguage == l.isoCode}"
             ng-repeat="l in availableLanguages">
             <span ng-show="!$first"> &middot; </span> {{l.name}}
           </a>
@@ -64,13 +67,15 @@
         <a href="tx/send" translate>broadcast transaction</a>
         ]
       </div>
-      <a class="insight m10v pull-right" target="_blank" href="http://insight.is">insight <small>API v{{version}}</small></a>
+      <a class="insight m10v pull-right" target="_blank" href="http://insight.pioncoin.org">insight <small>API
+          v{{version}}</small></a>
     </div>
   </div>
   <script language="javascript">window.apiPrefix = '/api';</script>
-	<script src="/socket.io/socket.io.js"></script>
-	<script src="js/vendors.min.js"></script>
-	<script src="js/angularjs-all.min.js"></script>
-	<script src="js/main.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/vendors.min.js"></script>
+  <script src="js/angularjs-all.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
+
 </html>
